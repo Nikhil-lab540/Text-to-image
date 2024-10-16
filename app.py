@@ -24,6 +24,9 @@ def hide_streamlit_style():
     """
     st.markdown(hide_st_style, unsafe_allow_html=True)
 # Streamlit app layout
+
+hide_streamlit_style()
+
 st.title("Text to Image Generator")
 
 # Input for text prompt
