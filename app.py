@@ -17,6 +17,18 @@ def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
     return response.content
 
+
+def hide_streamlit_style():
+    hide_st_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+    """
+    st.markdown(hide_st_style, unsafe_allow_html=True)
+
+hide_streamlit_style()
 # Streamlit app layout
 st.title("AI Image Generator using Hugging Face")
 
