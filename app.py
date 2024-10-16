@@ -39,6 +39,7 @@ prompt = st.text_input("Enter a description to generate an image:", "")
 if st.button("Generate Image"):
     if prompt:
         with st.spinner("Generating image..."):
+            print(f"User input: {prompt}")
             try:
                 # Call the API and get the image
                 image_bytes = query({"inputs": prompt})
