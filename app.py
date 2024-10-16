@@ -4,7 +4,7 @@ import io
 from PIL import Image
 
 # Hugging Face API details
-API_URL = "https://api-inference.huggingface.co/models/XLabs-AI/flux-RealismLora"
+API_URL = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev"
 headers = {"Authorization": "Bearer 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"}
 
 # Function to send the query to the Hugging Face model
