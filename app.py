@@ -30,7 +30,7 @@ def hide_streamlit_style():
 
 hide_streamlit_style()
 # Streamlit app layout
-st.title("AI Image Generator using Hugging Face")
+st.title("Text to Image Generator")
 
 # Input for text prompt
 prompt = st.text_input("Enter a description to generate an image:", "")
