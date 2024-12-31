@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 # Hugging Face API details
 API_URL = "https://api-inference.huggingface.co/models/XLabs-AI/flux-RealismLora"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer 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"}
 
 # Function to send the query to the Hugging Face model
 def query(payload):
