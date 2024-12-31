@@ -15,7 +15,9 @@ headers = {"Authorization": "Bearer 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"}
 # Function to send the query to the Hugging Face model
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
+    print(response.text)  # Log the response content for debugging
     return response.content
+
 
 
 def hide_streamlit_style():
